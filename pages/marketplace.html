@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore - Stockify</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body" onload="loadImages()">
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+<aside class="sidebar">
+
+  <div>
+    <div class="logo">Stockify</div>
+
+    <nav class="menu">
+      <a class="menu-item active" href="dashboard.html">Dashboard</a>
+      <a class="menu-item" href="marketplace.html">Explore</a>
+      <a class="menu-item" href="upload.html">Upload</a>
+      <a class="menu-item" href="profile.html">Profile</a>
+    </nav>
+  </div>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+</aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <div class="explore-header">
+      <h1>Explore</h1>
+      <input id="search" placeholder="Search photos..." oninput="searchImages()">
+    </div>
+
+    <div id="gallery" class="explore-grid"></div>
+
+  </main>
+
+</div>
+
+<script src="../js/marketplace.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

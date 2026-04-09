@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload - Stockify</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+<aside class="sidebar">
+
+  <div>
+    <div class="logo">Stockify</div>
+
+    <nav class="menu">
+      <a class="menu-item active" href="dashboard.html">Dashboard</a>
+      <a class="menu-item" href="marketplace.html">Explore</a>
+      <a class="menu-item" href="upload.html">Upload</a>
+      <a class="menu-item" href="profile.html">Profile</a>
+    </nav>
+  </div>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+</aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <h1>Upload Image</h1>
+
+    <div class="upload-container">
+
+      <!-- PREVIEW -->
+      <div class="upload-preview">
+        <img id="previewImage" src="https://via.placeholder.com/400x300?text=Preview">
+      </div>
+
+      <!-- FORM -->
+      <div class="upload-form">
+
+        <input id="title" placeholder="Image Title">
+        <input id="url" placeholder="Image URL" oninput="previewImage()">
+        <input id="price" placeholder="Price">
+        <input id="category" placeholder="Category">
+
+        <button onclick="uploadImage()" class="primary-btn">Upload Image</button>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="../js/upload.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

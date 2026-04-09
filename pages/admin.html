@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin - Stockify</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body" onload="loadAdmin()">
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div>
+      <div class="logo">Stockify</div>
+
+      <nav class="menu">
+        <a class="menu-item" href="dashboard.html">Dashboard</a>
+        <a class="menu-item" href="marketplace.html">Explore</a>
+        <a class="menu-item" href="upload.html">Upload</a>
+        <a class="menu-item" href="profile.html">Profile</a>
+        <a class="menu-item active" href="admin.html">Admin</a>
+      </nav>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <h1>Admin Panel</h1>
+
+    <div class="stats" id="adminStats"></div>
+
+    <h2 style="margin-top:30px;">All Images</h2>
+
+    <div id="adminGallery" class="grid"></div>
+
+  </main>
+
+</div>
+
+<script src="../js/admin.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

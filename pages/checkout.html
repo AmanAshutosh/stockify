@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout - Stockify</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body" onload="loadCheckout()">
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div>
+      <div class="logo">Stockify</div>
+
+      <nav class="menu">
+        <a class="menu-item" href="dashboard.html">Dashboard</a>
+        <a class="menu-item active" href="marketplace.html">Explore</a>
+        <a class="menu-item" href="upload.html">Upload</a>
+        <a class="menu-item" href="profile.html">Profile</a>
+      </nav>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <h1>Checkout</h1>
+
+    <div class="checkout-box" id="checkoutBox"></div>
+
+  </main>
+
+</div>
+
+<script src="../js/checkout.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

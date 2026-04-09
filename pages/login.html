@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Stockify</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-wrapper">
+
+  <!-- LEFT VISUAL -->
+  <div class="auth-visual">
+    <div class="auth-visual-overlay">
+      <h1>Stockify</h1>
+      <p>Turn your creativity into income</p>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="auth-box">
+
+    <h2>Welcome Back</h2>
+    <p class="auth-sub">Login or create your account</p>
+
+    <input id="email" placeholder="Enter your email">
+
+    <select id="role">
+      <option value="photographer">Photographer</option>
+      <option value="business">Business</option>
+    </select>
+
+    <button onclick="login()" class="primary-btn">Login</button>
+    <button onclick="signup()" class="secondary-btn">Create Account</button>
+
+  </div>
+
+</div>
+
+<script src="../js/auth.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

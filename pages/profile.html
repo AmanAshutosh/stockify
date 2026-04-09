@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile - Stockify</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="dashboard-body" onload="loadProfile()">
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+<aside class="sidebar">
+
+  <div>
+    <div class="logo">Stockify</div>
+
+    <nav class="menu">
+      <a class="menu-item active" href="dashboard.html">Dashboard</a>
+      <a class="menu-item" href="marketplace.html">Explore</a>
+      <a class="menu-item" href="upload.html">Upload</a>
+      <a class="menu-item" href="profile.html">Profile</a>
+    </nav>
+  </div>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+</aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- PROFILE HEADER -->
+    <div class="profile-header">
+      <div class="avatar" id="avatar"></div>
+
+      <div>
+        <h2 id="userEmail"></h2>
+        <p id="userRole"></p>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats" id="profileStats"></div>
+
+    <!-- ACTIONS -->
+    <div class="profile-actions">
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+
+  </main>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/profile.js"></script>
+</body>
+</html>
