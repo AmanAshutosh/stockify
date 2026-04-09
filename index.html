@@ -11,8 +11,8 @@
   <div class="nav-inner">
     <h2 class="logo">Stockify</h2>
     <div class="links">
-      <a href="pages/marketplace.html">Explore</a>
-      <a href="pages/login.html">Login</a>
+      <a href="/pages/marketplace.html">Explore</a>
+      <a href="/pages/login.html">Login</a>
     </div>
   </div>
 </nav>
@@ -29,10 +29,11 @@
   </div>
 </section>
 
-<!-- GRID -->
+<!-- TRENDING -->
 <section class="gallery">
-  <div class="grid">
+  <h2 style="margin-bottom:20px;">Trending Photos</h2>
 
+  <div class="grid">
     <div class="card">
       <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
     </div>
@@ -48,13 +49,24 @@
     <div class="card">
       <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913">
     </div>
-
   </div>
+</section>
+
+<!-- CTA -->
+<section style="text-align:center; padding:60px 20px;">
+  <h2>Start Exploring Now</h2>
+  <p style="color:#aaa; margin:10px 0;">
+    Thousands of high-quality images ready to use.
+  </p>
+
+  <a href="/pages/marketplace.html" class="primary-btn">
+    Explore Marketplace
+  </a>
 </section>
 
 <script>
 function goExplore() {
-  window.location.href = "pages/marketplace.html";
+  window.location.href = "/pages/marketplace.html";
 }
 </script>
 
